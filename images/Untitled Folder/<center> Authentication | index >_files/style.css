@@ -1,0 +1,38 @@
+.header
+{
+	width:100%;
+	height:10%;
+	background-color:green;
+	text-align:center;
+	border:solid;
+	text_shadow:2% 2% #FF000;
+
+}
+.container
+{
+	width:100%;
+	height:500px;
+	background-color:#d0e4fe;
+
+	border:solid;
+	text-align:center;
+
+}
+.footer
+{
+	width:100%;
+	height:100px;
+	background-color:green;
+	border:solid;
+	text-align:center;
+
+}
+.sub_container
+{
+	background-image-width:300px;
+	background-image-height:50%;
+	text-align:center;
+
+
+}
+
