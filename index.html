@@ -3,6 +3,18 @@
 <head>
 	<title>Authentication </title>
 	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".btn1").click(function(){
+  $("p").animate({borderWidth:"10px"});
+  });
+  $(".btn2").click(function(){
+  $("p").animate({borderWidth:"1px"});
+  });
+  
+});
+</script>
 </head>
 <body>
 	<div class="header">
@@ -12,9 +24,14 @@
 		<div class="sub_container">
 		
 			<img src="file:///home/ideology/workspace/authentication/images/pulpit.jpg"><br><br>
-			<p> 
-				We are an FAA certified and EASA approved FAR Part 145 repair station specializing in overhaul, repair and check/test for exciters, starters and a host of small but essential components that can help keep a maintenance operation profitable and assets in the air. 
-			</p>
+			
+				
+				
+		<p style="border:1px solid black">We are an FAA certified and EASA approved FAR Part 145 repair station specializing in overhaul, repair and check/test for exciters, starters and a host of small but essential components that can help keep a maintenance operation profitable and assets in the air. </p>
+		<button class="btn1">Animate</button>
+		<button class="btn2">Reset</button>
+
+			
 		</div>
 		
 	</div>
