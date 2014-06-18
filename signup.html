@@ -3,65 +3,107 @@
 <head>
 	<title>Authentication | Sign Up</title>
 		<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-	
+        <script type="text/javascript" src="javascripts/scripts.js"></script>
+    
+	   
 </head>
 <body>
 	<div class="header">
 		<h1>PERSONAL DETAILS</h1>
 	</div>
 	<div class="container">
-		<form action="signin.html">
-		
-		1. First Name:<br><br>
-       
-    	
-   		2. Last Name:<br><br>        
-   		
-    	3. Email:<br><br>
-    	
-    	4. Password:<br><br>
-        5. Confirm Password:<br><br>
-    	6. Date of Birth:<br><br>
-    	
-    
-    	
-    	7. Phone Number:<br><br>
-    	
-    	8. Address:<br><br>
-    	9. Pin Number:<br><br>
-    	
-   		              
-    	
-    
-   		10. Male/Female:<br><br>
-   	
-   		<div class="con">
-        	<input type="text"required><br><br>
-        	<input type="text"required><br><br>
-        	<input type="text"required><br><br>
-        	<input type="password"required><br><br>
-            <input type="password"required><br><br>
-        	<input type="text"required><br><br>
-        	<input type="text"required><br><br>
-        	<input type="text"required><br><br>
-
-
-            <input type="radio" name="sex" value="male">Male
-            <input type="radio" name="sex" value="female">Female<br><br>
+		<form  method="POST" action="welcome.html">
         
-            <input type="Reset">
-            <input type="submit" value="Submit">
-		</div>	
+            
+            <p>
+                <input type="text" name="First Name" id="First Name" placeholder="First Name" >
+           
+                <input type="text" name="Last Name" id="Last Name"  placeholder="Last Name"/>
+            </p>
+              
+            <p>
+                <input type="email" name="" id="email"  placeholder="Email"/>
+           
+               
+            </p>
+              
+            <p>
+                 <input type="password " name="password" id="password "  placeholder="Password"/>
+                 <input type=" password" name="password" id="password"  placeholder="Confirm Password"/>
+            </p>
+            
+              
+           
+            <p>
+                
+                    <input type="radio" name="sex" id="male"value="male">Male
+                    <input type="radio" name="sex" id=""value="female">Female<br>
+                   
+            </p>
+            <p>
+                <label>
+                    Location:
+                
+                <select>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="New Delhi">New Delhi</option><br>
+                    
+                </select>
+            </p>
+            <p>
+                <label>
+                    Date of Birth:
+                
+                    <select>
+                    <option value="">Month</option>
+                    
+                       <option value="JAN">JAN</option> 
+                       <option value="FEB">FEB</option>
+                       <option value="MAR">MAR</option>
+                    </select>
+                    <select>
+                        <option value="Date">Date</option>
+                       
+                        <option value="">01</option> 
+                        <option value="">02</option>
+                        <option value="">03</option>
+                    </select>
+                    
+                    <select>
+                        <option value="Year">Year</option>
+                        <option value="">1990</option>
+                       
+                        <option value="">1901</option> 
+                        <option value="">1902</option>
+                    
+                    </select>
+            </p>
+
+
+
+
+             
+            <p>
+                <input type="submit" value="Submit" onclick="return signup()" />
+                <input type="button" value="Reset" onclick="return reset_signup()" />
+            </p>
+           
+		
+		    
+             
         </form>
 
-		<br>
-	</div>
-			
+    </div>                  
+           
+     
+        
+            
 			
 		<div class="footer">
 			<a href="signin.html">Sign In</a>
 			<a href="index.html">Home</a>
-			<a href=""></a>		
+				
 		</div>
 	
 </body>
