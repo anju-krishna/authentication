@@ -3,7 +3,7 @@
 <head>
 	<title>Authentication | Sign Up</title>
 		<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-        <script type="text/javascript" src="javascripts/scripts.js"></script>
+        <script type="text/javascript" src="javascripts/scripts.js" ></script>
     
 	   
 </head>
@@ -16,90 +16,68 @@
         
             
             <p>
-                <input type="text" name="First Name" id="First Name" placeholder="First Name" >
+                <input type="text" name="first_name" id="first_name" placeholder="First Name"  style="width:335px;">
            
-                <input type="text" name="Last Name" id="Last Name"  placeholder="Last Name"/>
+                <input type="text" name="last_name" id="last_name" placeholder="Last Name"/  style="width:335px;">
             </p>
               
             <p>
-                <input type="email" name="" id="email"  placeholder="Email"/>
+                <input type="email" name="" id="email" placeholder="Email"/  style="width:335px;">
            
                
             </p>
               
             <p>
-                 <input type="password " name="password" id="password "  placeholder="Password"/>
-                 <input type=" password" name="password" id="password"  placeholder="Confirm Password"/>
+                <input type="password" name="password" id="password"  placeholder="Password"/  style="width:335px;">
+                <input type="password" name="confirm_password" id="confirm_password"  placeholder="Confirm Password"/  style="width:335px;">
             </p>
             
-              
            
-            <p>
+           
+              <p id="gender">
                 
-                    <input type="radio" name="sex" id="male"value="male">Male
-                    <input type="radio" name="sex" id=""value="female">Female<br>
-                   
+                <input type="radio" name="sex" id="male"value="male"  style="width:50px;">Male
+                <input type="radio" name="sex" id="female" value="female" style="width:50px;">Female
             </p>
             <p>
-                <label>
-                    Location:
-                
-                <select>
-                    <option value="Kerala">Kerala</option>
-                    <option value="Tamil Nadu">Tamil Nadu</option>
-                    <option value="New Delhi">New Delhi</option><br>
-                    
+
+                 <select id="location"  style="width:344px;">
+                        
+                    <option value="0" style=>Select State</option>
+                    <option value="1">Kerala</option>
+                    <option value="2">Tamil Nadu</option>
+                    <option value="3">NewDelhi</option>
                 </select>
             </p>
-            <p>
+            <P>
                 <label>
-                    Date of Birth:
+                    Language:
+                </label>
+            
                 
-                    <select>
-                    <option value="">Month</option>
-                    
-                       <option value="JAN">JAN</option> 
-                       <option value="FEB">FEB</option>
-                       <option value="MAR">MAR</option>
-                    </select>
-                    <select>
-                        <option value="Date">Date</option>
-                       
-                        <option value="">01</option> 
-                        <option value="">02</option>
-                        <option value="">03</option>
-                    </select>
-                    
-                    <select>
-                        <option value="Year">Year</option>
-                        <option value="">1990</option>
-                       
-                        <option value="">1901</option> 
-                        <option value="">1902</option>
-                    
-                    </select>
+                    <input type="checkbox" name="M" id="malayalam" value="M" style="width:60px;">M
+                    <input type="checkbox" name="E" id="english" value="E" style="width:60px;">E
+                    <input type="checkbox" name="H" id="hindi" value="H" style="width:60px;">H
+                
+               
             </p>
-
-
-
-
+             <p>
+                 <input type="phone_number " name="phone_number" id="phone_number"  placeholder="Phone Number"/  style="width:335px;">
+                 <input type="pincode" name="pincode" id="pincode"  placeholder="Pincode"/  style="width:335px;">
+            </p>  
+               
+           
              
             <p>
                 <input type="submit" value="Submit" onclick="return signup()" />
                 <input type="button" value="Reset" onclick="return reset_signup()" />
+
             </p>
-           
-		
-		    
-             
+                
         </form>
 
     </div>                  
-           
-     
-        
-            
-			
+           		
 		<div class="footer">
 			<a href="signin.html">Sign In</a>
 			<a href="index.html">Home</a>
